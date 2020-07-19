@@ -1,6 +1,7 @@
 module.exports = {
   title: 'kever.js',
   description: 'nodejs framework',
+  base: '/kever-docs/',
   themeConfig: {
     logo: '/assets/img/logo.png',
     nav: [
