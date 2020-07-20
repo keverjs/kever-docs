@@ -2,7 +2,7 @@
 
 set -e
 
-function log {
+function log() {
   now=`date '+%Y-%m-%d %H:%M:%S'`
   echo "[$now]===========$1============"
 }
