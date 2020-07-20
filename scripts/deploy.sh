@@ -1,8 +1,8 @@
-#! /bin/sh
+#! /bin/bash
 
 set -e
 
-function log() {
+log() {
   now=`date '+%Y-%m-%d %H:%M:%S'`
   echo "[$now]===========$1============"
 }
