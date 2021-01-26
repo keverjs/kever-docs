@@ -1,15 +1,14 @@
 module.exports = {
   title: 'kever.js',
-  description: 'nodejs framework',
+  description: 'node.js framework',
   base: '/kever-docs/',
   themeConfig: {
     logo: '/assets/img/logo.png',
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'API', link: '/api/' },
-      { text: 'GitHub', link: 'https://github.com/keverjs' },
-    ],
-    sidebar: 'auto',
+    nav: require('./nav/index.js'),
+    sidebar: {
+      '/guide/': require('./sidebar/guide.js'),
+      '/api/': require('./sidebar/api.js'),
+    },
     lastUpdated: 'Last Updated',
     nextLinks: false,
     prevLinks: false,
