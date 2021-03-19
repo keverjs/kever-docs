@@ -9,6 +9,6 @@ features:
 - title: TypeScript支持
   details: 基于TypeScript实现，支持TypeScript类型推断。
 - title: Koa
-  details: 基于Koa轻量级封装，支持插件能力。
+  details: 基于Koa轻量级封装，插件能力增强。
 footer: MIT Licensed | Copyright © 2021-present hubvue
 ---
