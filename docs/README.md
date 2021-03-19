@@ -4,11 +4,11 @@ heroText: Kever.js
 actionText: 快速上手 →
 actionLink: /guide/
 features:
-- title: IOC
-  details: 基于IOC弱化模块间的依赖关系，模块弱耦合。
-- title: TypeScript支持
-  details: 基于TypeScript实现，支持TypeScript类型推断。
-- title: Koa
-  details: 基于Koa轻量级封装，插件能力增强。
+- title: Ioc
+  details: 基于装饰器实现IOC弱化模块间的依赖关系，模块弱耦合
+- title: TypeScript
+  details: 基于TypeScript实现，支持TypeScript类型推断
+- title: Plugin
+  details: 强大的插件能力，同时支持Koa Middleware
 footer: MIT Licensed | Copyright © 2021-present hubvue
 ---
