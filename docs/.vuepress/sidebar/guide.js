@@ -1,32 +1,22 @@
 module.exports = [
   {
-    title: "指南",
+    title: "概述",
     collapsable: false,
     children: [
       '',
-      'guide/install',
-      'guide/use'
+      'guide/principle',
+      'guide/install'
     ]
   },
   {
-    title: "使用路由",
+    title: "使用",
     collapsable: false,
     children: [
-      'router'
-    ]
-  },
-  {
-    title: "模块引入",
-    collapsable: false,
-    children: [
-      'module'
-    ]
-  },
-  {
-    title: "使用插件",
-    collapsable: false,
-    children: [
-      'plugin'
+      'use/first',
+      'use/controller',
+      'use/router',
+      'use/service',
+      'use/plugin'
     ]
   }
 ]
