@@ -14,8 +14,12 @@ kever-project
 │   |   ├── service (可选)
 │   |       └── index.js
 ```
-目前看来，工程目录约束比较简单。
-开发环境下，`src/index.ts`为项目入口文件，位置随意，`src/app`为工程约束目录，内部分别有`controller`、`plugin`、`service`三个业务目录，且`controller`目录为必选（kever采用MVC的架构模式设计，因此必须要有Controller存在）。
+工程目录约束比较简单。
+
+- `src/index.ts` 项目主入口，没有约束，位置随意
+- `src/app/controller/**` 用于解析用户的输入，处理后返回相应的结果，具体可参考[控制器](./controller.md)
+- `src/app/plugin/**` 用于编写`kever`插件，可选，具体可参考[kever插件](./plugin.md)
+- `src/app/service/**` 用于编写业务逻辑层，可选，具体可参考[服务注入](./service.md)
 
 由于生产环境是经过`Typescript`编译后的，因此自动加载的目录结构由`tsconfig`中的`outDir`配置决定，例如下面配置：
 ```json
@@ -56,8 +60,10 @@ export class IndexController {
   }
 }
 ```
-在`@kever/core`包中暴露出`Controller`装饰器，被`Controller`修饰的类会被`kever`标记。
+在`@kever/core`包中暴露出`Controller`装饰器，被`Controller`修饰的类会被`kever`标记为控制器。
+
 我们还可以看到在`@kever/router`包中暴露出`Get`装饰器，被`Get`修饰的类方法会被`kever`标记成http get请求。
+
 当项目启动的时候，`kever`扫描项目中所有的`Controller`，并将所有被标记为路由的方法通过`koa-router`注册成路由，路由的path由`Controller`与`Get`二者参数的组合，如上面代码，路由path为`/index`。
 
 目前为止，一个简单的web服务就创建完成了。

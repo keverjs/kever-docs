@@ -14,7 +14,6 @@ module.exports = [
     children: [
       'use/first',
       'use/controller',
-      'use/router',
       'use/service',
       'use/plugin'
     ]
