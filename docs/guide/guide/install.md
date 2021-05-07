@@ -3,7 +3,6 @@ title: 安装
 date: 2021-01-26 17:09:34
 permalink: /pages/94c058/
 ---
-# 安装
 
 框架内部能力依赖`reflect-metadata`实现，因此在安装kever相关包时也需要将`reflect-metadata`这个包安装一下s
 

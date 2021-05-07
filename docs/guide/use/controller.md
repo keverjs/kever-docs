@@ -3,7 +3,6 @@ title: Controller
 date: 2021-03-24 14:20:22
 permalink: /pages/a3c064/
 ---
-# Controller
 
 在`kever`中，控制器与路由是相辅相成的，控制器拥有承载路由的能力，路由通过控制器进行注册，并且一个控制器可以提供多个路由。
 

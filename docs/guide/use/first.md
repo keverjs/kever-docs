@@ -3,7 +3,7 @@ title: 创建一个Web Server
 date: 2021-03-24 17:08:06
 permalink: /pages/cbc753/
 ---
-# 创建一个Web Server
+
 `kever`对项目工程目录进行严格的约束，目录约束的目的是`kever`框架提供自动加载项目文件的能力，内部采用`Ioc`的方式管理模块依赖，采用`依赖注入`的方式调用其他模块的方法或属性，不需要手动`import`某个文件，目录约束如下：
 
 ```txt
@@ -16,15 +16,18 @@ kever-project
 │   |       └── index.ts
 │   |   ├── plugin (可选)
 │   |       └── index.js
+│   |   ├── model (可选)
+│   |       └── index.js
 │   |   ├── service (可选)
 │   |       └── index.js
 ```
 工程目录约束比较简单。
 
 - `src/index.ts` 项目主入口，没有约束，位置随意
-- `src/app/controller/**` 用于解析用户的输入，处理后返回相应的结果，具体可参考[控制器](./controller.md)
-- `src/app/plugin/**` 用于编写`kever`插件，可选，具体可参考[kever插件](./plugin.md)
-- `src/app/service/**` 用于编写业务逻辑层，可选，具体可参考[服务注入](./service.md)
+- `src/app/controller/**` 用于解析用户的输入，处理后返回相应的结果，具体可参考[Controller](./controller.md)
+- `src/app/plugin/**` 用于编写`kever`插件，可选，具体可参考[Plugin](./plugin.md)
+- `src/app/service/**` 用于编写业务逻辑层，可选，具体可参考[Service](./service.md)
+- `src/app/model/**` 用于编写数据模型层，可选，具体可参考[Model](./model.md)
 
 由于生产环境是经过`Typescript`编译后的，因此自动加载的目录结构由`tsconfig`中的`outDir`配置决定，例如下面配置：
 ```json
