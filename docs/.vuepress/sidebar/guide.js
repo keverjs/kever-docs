@@ -15,6 +15,7 @@ module.exports = [
       'use/first',
       'use/controller',
       'use/service',
+      'use/model',
       'use/plugin'
     ]
   }
