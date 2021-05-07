@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/keverjs/kever-docs#readme",
   "devDependencies": {
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.2",
+    "vuepress-theme-vdoing": "^1.8.3"
   }
 }

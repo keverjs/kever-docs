@@ -1,3 +1,8 @@
+---
+title: Service
+date: 2021-01-26 17:29:49
+permalink: /pages/1f8575/
+---
 # Service
 
 随着业务需求的逐渐增多，`controller`模块下业务代码越写越多，代码显得很臃肿，不易管理，很明显，传统的MVC分层架构已经不能满足业务的需求。这个时候就需要抽离出一个`service`层来对`controller`中业务模块进行抽离，而`controller`则负责处理请求的输入、输出以及根据需求要求调用相应的`service`模块处理。

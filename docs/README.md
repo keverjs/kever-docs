@@ -11,4 +11,5 @@ features:
 - title: Plugin
   details: 强大的插件能力，同时支持Koa Middleware
 footer: MIT Licensed | Copyright © 2021-present hubvue
+postList: none
 ---
