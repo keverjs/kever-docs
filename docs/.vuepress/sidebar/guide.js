@@ -11,6 +11,7 @@ module.exports = [
     collapsable: false,
     children: [
       'use/first',
+      'use/createApp',
       'use/controller',
       'use/service',
       'use/model',
