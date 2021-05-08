@@ -3,7 +3,7 @@ module.exports = [
     title: "概述",
     collapsable: false,
     children: [
-      'guide/guide',
+      ''
     ]
   },
   {
