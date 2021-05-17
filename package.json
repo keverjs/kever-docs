@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "sh ./scripts/deploy.sh"
+    "deploy": "zx ./scripts/deploy.mjs"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/keverjs/kever-docs#readme",
   "devDependencies": {
+    "esno": "^0.5.0",
     "vuepress": "^1.5.2",
-    "vuepress-theme-vdoing": "^1.8.3"
+    "vuepress-theme-vdoing": "^1.8.3",
+    "zx": "^1.5.0"
   }
 }
