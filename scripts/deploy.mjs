@@ -15,7 +15,7 @@ function errHandlerInit() {
 
 async function shell(command) {
   const commandRes = await $(command)
-  return commandRes.toString().replace(/\n$/, '')
+  return commandRes.toString().trim()
 }
 
 async function log(message) {
